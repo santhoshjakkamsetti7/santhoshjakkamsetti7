@@ -115,6 +115,195 @@ Beginner-level sales analysis project completed using sample data.
 
 ![Revenue by Product](revenue_by_product%20(2).png)
 
+# Employee Data Analysis Using SQL
+
+## 1. Project Overview
+
+This project focuses on analysing employee data using MySQL to understand salary distributions, department performance, and employee locations.
+
+The objective is to practise SQL querying techniques and extract useful information that can support business and HR decisions.
+
+## 2. Business Objectives
+
+- Identify employees earning more than ₹60,000.
+- Calculate employee counts and average salaries by department.
+- Find the highest-paid employee in each department.
+- Compare employee counts and average salaries across cities.
+- Identify employees earning above their department's average salary.
+
+## 3. Tools and Technologies
+
+- **Database:** MySQL
+- **SQL Environment:** MySQL Workbench
+- **Language:** SQL
+- **Version Control:** GitHub
+
+## 4. Dataset Description
+
+The project uses 12 sample employee records created for learning and portfolio demonstration.
+
+| Column | Description |
+|---|---|
+| employee_id | Unique employee identifier |
+| name | Employee name |
+| department | Employee's department |
+| salary | Employee's salary |
+| city | Employee's city |
+| joining_date | Date the employee joined |
+
+The dataset contains departments such as IT, HR, Finance, and Marketing, with employees located in Hyderabad, Bengaluru, and Chennai.
+
+## 5. SQL Analysis and Business Questions
+
+### Analysis 1: Retrieve Employee Records
+
+**Business question:** What employee information is available?
+
+```sql
+SELECT *
+FROM employees;
+```
+
+**Purpose:** Retrieves all records and columns from the employee table.
+
+### Analysis 2: Employees Earning More Than ₹60,000
+
+**Business question:** Which employees have salaries above ₹60,000?
+
+```sql
+SELECT name, department, salary
+FROM employees
+WHERE salary > 60000
+ORDER BY salary DESC;
+```
+
+**Purpose:** Filters employees by salary and sorts the results from highest to lowest.
+
+### Analysis 3: Department-Wise Salary Analysis
+
+**Business question:** How many employees are in each department, and what is their average salary?
+
+```sql
+SELECT
+    department,
+    COUNT(*) AS total_employees,
+    AVG(salary) AS average_salary
+FROM employees
+GROUP BY department
+ORDER BY average_salary DESC;
+```
+
+**Purpose:** Uses aggregation to compare department sizes and average salaries.
+
+### Analysis 4: Highest-Paid Employee in Each Department
+
+**Business question:** Who earns the highest salary in each department?
+
+```sql
+SELECT department, name, salary
+FROM employees e
+WHERE salary = (
+    SELECT MAX(salary)
+    FROM employees
+    WHERE department = e.department
+)
+ORDER BY salary DESC;
+```
+
+**Purpose:** Uses a correlated subquery to find each department's maximum salary. If multiple employees share the maximum, all matching employees are returned.
+
+### Analysis 5: City-Wise Employee Analysis
+
+**Business question:** How are employees distributed across cities?
+
+```sql
+SELECT
+    city,
+    COUNT(*) AS total_employees,
+    AVG(salary) AS average_salary
+FROM employees
+GROUP BY city
+ORDER BY total_employees DESC;
+```
+
+**Purpose:** Compares employee counts and average salaries across cities.
+
+### Analysis 6: Employees Earning Above Their Department Average
+
+**Business question:** Which employees earn more than the average salary in their own department?
+
+```sql
+SELECT
+    e.name,
+    e.department,
+    e.salary
+FROM employees e
+WHERE e.salary > (
+    SELECT AVG(salary)
+    FROM employees
+    WHERE department = e.department
+)
+ORDER BY e.department, e.salary DESC;
+```
+
+**Purpose:** Uses a correlated subquery to compare each employee's salary with the average for their department.
+
+## 6. Key SQL Concepts Practised
+
+- `SELECT` and `FROM` — retrieving data
+- `WHERE` — filtering records
+- `ORDER BY` — sorting results
+- `COUNT()` — counting employees
+- `AVG()` — calculating average salaries
+- `GROUP BY` — aggregating data by department or city
+- `MAX()` — identifying maximum salaries
+- Subqueries — answering questions using nested queries
+- Table aliases — making queries easier to read
+
+## 7. Business Value
+
+This type of analysis can help HR and business teams explore:
+
+- Salary differences across departments.
+- Departments with higher or lower average salaries.
+- Employee distribution across locations.
+- Employees whose salaries exceed their department averages.
+
+The dataset is small and fictional, so these results demonstrate SQL techniques rather than conclusions about a real organisation.
+
+## 8. Project Structure
+
+```text
+employee-data-analysis-sql/
+├── README.md
+└── employee_data_analysis.sql
+```
+
+- `README.md` — project documentation, objectives, queries, and explanations.
+- `employee_data_analysis.sql` — database setup, sample records, and SQL analysis.
+
+## 9. How to Run the Project
+
+1. Install and open MySQL Workbench.
+2. Connect to your MySQL server.
+3. Open `employee_data_analysis.sql`.
+4. Execute the database creation and table creation statements.
+5. Insert the sample employee records.
+6. Run the analysis queries individually to view the results.
+
+## 10. Learning Outcomes
+
+Through this project, I practised writing SQL queries, filtering and aggregating records, comparing salaries, and using subqueries to answer business questions.
+
+## 11. Project Limitations and Future Improvements
+
+- The dataset contains only 12 sample records.
+- Future versions could use a larger dataset.
+- Additional analysis could include salary distributions, hiring trends, and department comparisons.
+- Future improvements could include Power BI visualisations.
+
+
+
 ## Areas of Interest
 - Data cleaning and exploratory data analysis
 - SQL-based data analysis
