@@ -1,6 +1,6 @@
 # Hi, I'm Santhosh Jakkamsetti 👋
 
-**Aspiring Data Analyst | SQL | Python | Excel | Pandas | NumPy**
+**Aspiring Data Analyst | SQL | Python | Excel | Pandas | NumPy | Power BI**
 
 ## About Me
 - 🎓 B.Sc. Computer Science graduate (2026)
