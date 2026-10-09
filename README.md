@@ -111,6 +111,10 @@ Python fundamentals, Pandas DataFrames, data cleaning, grouping and aggregation,
 
 Beginner-level sales analysis project completed using sample data.
 
+## Sales Revenue Chart
+
+![Revenue by Product](revenue_by_product%20(2).png)
+
 ## Areas of Interest
 - Data cleaning and exploratory data analysis
 - SQL-based data analysis
@@ -119,8 +123,4 @@ Beginner-level sales analysis project completed using sample data.
 
 ## Contact
 - Email: santhoshjakkamsetti2@gmail.com
-
-## Sales Revenue Chart
-
-![Revenue by Product](<revenue_by_product (2).png>)
 
