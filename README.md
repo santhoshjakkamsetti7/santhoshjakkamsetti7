@@ -302,6 +302,61 @@ Through this project, I practised writing SQL queries, filtering and aggregating
 - Additional analysis could include salary distributions, hiring trends, and department comparisons.
 - Future improvements could include Power BI visualisations.
 
+# Power BI Sales Performance Dashboard
+
+## 1. Project Overview
+
+The Sales Performance Dashboard is a data visualization project developed using Microsoft Power BI Desktop. The purpose of this project is to analyze sales data and present important business information through clear and interactive visualizations.
+
+The dashboard helps users understand overall sales performance, profit, product performance, regional sales, and sales trends over time.
+
+## 2. Project Objectives
+
+- Analyze overall sales and profit performance.
+- Compare sales across different products.
+- Understand sales distribution across regions.
+- Track sales trends by order date.
+- Present business data in an easy-to-understand dashboard.
+
+## 3. Tools and Technologies
+
+- **Microsoft Power BI Desktop:** Dashboard creation and data visualization.
+- **Data Analysis:** Exploring sales and profit metrics.
+- **GitHub:** Project versioning and portfolio presentation.
+
+## 4. Dashboard Features
+
+### Key Performance Indicators (KPIs)
+- **Total Sales:** Displays the overall sales amount.
+- **Total Profit:** Displays the overall profit amount.
+
+### Data Visualizations
+- **Sales by Product:** Compares sales performance across products.
+- **Sales Trend by Order Date:** Shows how sales change over time.
+- **Sales by Region:** Compares sales performance across geographical regions.
+
+## 5. Files Included
+
+- `Sales_Performance_Dashboard.pbix` — Editable Power BI Desktop project file.
+
+## 6. Business Value
+
+This dashboard demonstrates how sales data can be organized into meaningful visualizations to support business reporting and decision-making. It helps users identify sales patterns, compare product and regional performance, and monitor important metrics.
+
+## 7. Skills Demonstrated
+
+- Power BI dashboard development
+- Data visualization
+- KPI reporting
+- Sales performance analysis
+- GitHub project documentation
+
+## 8. Future Improvements
+
+- Add interactive filters and slicers.
+- Create additional business insights.
+- Improve dashboard design and layout.
+- Add more advanced DAX measures as the project develops.
 
 
 ## Areas of Interest
