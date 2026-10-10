@@ -14,6 +14,9 @@
 - **Python Libraries:** Pandas and NumPy fundamentals
 - **Excel:** Data organization, sorting, filtering, and formulas
 
+## 🎯 Career Goal
+-To begin my career as a Data Analyst and contribute to data-driven decision-making while growing my technical and analytical expertise.
+
 ## Projects
 
 -Python results: Keep the ₹5,87,000 revenue and other figures only if they match the actual code and dataset.
