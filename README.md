@@ -15,7 +15,28 @@
 - **Excel:** Data organization, sorting, filtering, and formulas
 
 ## Projects
-# Sales Data Analysis: Data Cleaning & Exploratory Data Analysis (EDA)
+
+-Python results: Keep the ₹5,87,000 revenue and other figures only if they match the actual code and dataset.
+
+-SQL project: Include the SQL file and ensure it contains the database setup, sample records, and queries.
+
+-Power BI project: Keep the editable .pbix file in its repository. Add a dashboard screenshot to make the project easier to preview.
+
+-Skills: Clearly distinguish skills you have practised from tools or concepts you are still learning.
+
+-Project status: Call the projects beginner-level portfolio projects based on sample data, rather than suggesting professional business experience.
+
+## Areas of Interest
+- Data cleaning and exploratory data analysis
+- SQL-based data analysis
+- Excel reporting
+- Data visualization and business insights
+
+## Contact
+- Email: santhoshjakkamsetti2@gmail.com
+
+
+  # Sales Data Analysis: Data Cleaning & Exploratory Data Analysis (EDA)
 
 ## 1. Project Overview
 
@@ -351,6 +372,7 @@ This dashboard demonstrates how sales data can be organized into meaningful visu
 - Sales performance analysis
 - GitHub project documentation
 
+
 ## 8. Future Improvements
 
 - Add interactive filters and slicers.
@@ -358,13 +380,4 @@ This dashboard demonstrates how sales data can be organized into meaningful visu
 - Improve dashboard design and layout.
 - Add more advanced DAX measures as the project develops.
 
-
-## Areas of Interest
-- Data cleaning and exploratory data analysis
-- SQL-based data analysis
-- Excel reporting
-- Data visualization and business insights
-
-## Contact
-- Email: santhoshjakkamsetti2@gmail.com
 
